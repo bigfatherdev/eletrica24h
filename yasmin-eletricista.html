@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eletricista Profissional no Rio de Janeiro | Orçamento grátis e emergência 24h</title>
+<meta name="description" content="Instalações, quadros de distribuição e manutenção elétrica no Rio de Janeiro. Atendimento rápido e seguro, conforme NR-10. Orçamento grátis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,700;1,800;1,900&family=Barlow+Semi+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#050b1f; --bg2:#0a1636; --blue:#2f7bff; --blue-glow:rgba(47,123,255,.55);
+  --yellow:#ffc21a; --orange:#ff8a00; --text:#eef3ff; --muted:#9fb2d9;
+  --display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
+  --body:"Barlow Semi Condensed","Arial Narrow",Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:1.15rem;line-height:1.5;
+  background-image:
+    linear-gradient(rgba(47,123,255,.07) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(47,123,255,.07) 1px,transparent 1px);
+  background-size:44px 44px;}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:.95}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:56px 0 48px;
+  background:radial-gradient(ellipse at 80% 20%,rgba(47,123,255,.35),transparent 55%),radial-gradient(ellipse at 10% 0,rgba(255,194,26,.12),transparent 40%)}
+.hero .wrap{display:grid;gap:32px;grid-template-columns:1.15fr .85fr;align-items:center}
+.hero h1{font-size:clamp(3.2rem,9vw,6.4rem);font-weight:900;font-style:italic;text-transform:uppercase}
+.hero h1 .l1{display:block;color:#fff;font-weight:800}
+.hero h1 .l2{display:block;background:linear-gradient(180deg,#ffe066,var(--yellow) 45%,var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 4px 0 rgba(0,0,0,.35)) drop-shadow(0 0 22px rgba(255,170,0,.35))}
+.hero p.lead{max-width:34ch;font-size:1.35rem;color:var(--muted);margin:20px 0 28px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:14px;font-family:var(--display);font-weight:700;font-size:1.35rem;text-decoration:none;text-transform:uppercase;letter-spacing:.02em;min-height:52px}
+.btn-primary{background:linear-gradient(180deg,#ffd23f,var(--yellow));color:#1a1200;box-shadow:0 0 0 2px #ffe066,0 0 28px rgba(255,194,26,.5)}
+.btn-ghost{border:2px solid var(--blue);color:#fff;box-shadow:0 0 18px var(--blue-glow),inset 0 0 14px rgba(47,123,255,.25)}
+.btn:hover{filter:brightness(1.1)}
+.bolt-card{position:relative;aspect-ratio:3/4;border-radius:22px;border:2px solid var(--blue);
+  background:linear-gradient(160deg,#0b1d4d,#050b1f 70%);box-shadow:0 0 36px var(--blue-glow),inset 0 0 40px rgba(47,123,255,.25);
+  display:grid;place-items:center;overflow:hidden}
+.bolt-card svg{width:62%;height:auto;filter:drop-shadow(0 0 26px rgba(255,170,0,.8));animation:pulse 2.8s ease-in-out infinite}
+.bolt-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bolt-card .tag{position:absolute;left:14px;bottom:14px;right:14px;background:rgba(5,11,31,.85);border:1px solid var(--blue);border-radius:10px;padding:10px 14px;font-weight:600}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+
+/* Neon panels */
+section{padding:56px 0}
+.section-title{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800;font-style:italic;text-transform:uppercase;margin-bottom:28px}
+.section-title span{color:var(--yellow)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(3,1fr)}
+.panel{background:rgba(5,11,31,.9);border:2px solid var(--blue);border-radius:18px;padding:26px;box-shadow:0 0 22px rgba(47,123,255,.4),inset 0 0 22px rgba(47,123,255,.12)}
+.panel h3{font-size:1.9rem;font-weight:700;color:#fff;margin:14px 0 10px}
+.panel p{margin:0;color:var(--muted)}
+.panel svg{width:42px;height:42px;stroke:var(--yellow);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* Emergency */
+.emergency .box{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:34px;border-radius:22px;
+  border:2px solid var(--yellow);background:linear-gradient(120deg,rgba(255,194,26,.14),rgba(5,11,31,.9) 60%);
+  box-shadow:0 0 34px rgba(255,194,26,.35),inset 0 0 30px rgba(255,194,26,.1)}
+.emergency h2{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;text-transform:uppercase}
+.emergency p{margin:10px 0 0;color:var(--muted);max-width:44ch}
+
+/* Trust */
+.trust{display:grid;gap:20px;grid-template-columns:1.2fr 1fr}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.checks li{display:flex;gap:12px;align-items:flex-start}
+.checks li::before{content:"";flex:none;width:22px;height:22px;margin-top:3px;border-radius:50%;background:var(--yellow) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%231a1200' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/80% no-repeat}
+.nr{display:grid;place-items:center;text-align:center}
+.nr strong{font-family:var(--display);font-size:5rem;font-style:italic;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 0 24px rgba(255,170,0,.6)}
+.nr span{color:var(--muted)}
+
+/* Contact */
+footer{border-top:1px solid rgba(159,178,217,.3);padding:34px 0 110px}
+.contact{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between}
+.contact a{text-decoration:none;font-size:1.5rem;font-family:var(--display);font-weight:700}
+.contact small{color:var(--muted);font-size:1rem}
+
+.float{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:10;
+  width:62px;height:62px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 0 0 3px #fff3,0 8px 24px rgba(0,0,0,.5)}
+.float svg{width:34px;height:34px;fill:#fff}
+
+@media (max-width:820px){
+  .hero .wrap,.trust,.emergency .box{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .bolt-card{aspect-ratio:4/3}
+  .btn{width:100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){.bolt-card svg{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1><span class="l1">Eletricista</span><span class="l2">Profissional</span></h1>
+      <p class="lead">Atendimento rápido e seguro no Rio de Janeiro. Orçamento grátis e emergências 24h.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://wa.me/5521966887450?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20servi%C3%A7o%20el%C3%A9trico." >Pedir orçamento grátis</a>
+        <a class="btn btn-ghost" href="tel:+5521966887450">Ligar agora</a>
+      </div>
+    </div>
+    <!-- Para usar a foto da profissional: adicione <img src="foto.jpg" alt="Eletricista profissional"> dentro de .bolt-card -->
+    <div class="bolt-card" role="img" aria-label="Raio amarelo sobre fundo azul">
+      <svg viewBox="0 0 100 160" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe066"/><stop offset="1" stop-color="#ff8a00"/></linearGradient></defs><path d="M62 4 8 90h34L30 156 92 64H57z" fill="url(#g)"/></svg>
+      <div class="tag">Cumpre a NR-10 · Atendimento rápido</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="servicos">
+    <div class="wrap">
+      <h2 class="section-title">O que eu <span>resolvo</span></h2>
+      <div class="grid">
+        <article class="panel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+          <h3>Instalações e reparos elétricos em geral</h3>
+          <p>Tomadas, iluminação, chuveiros, ar-condicionado e fiação, em casa ou no comércio.</p>
+        </article>
+        <article class="panel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h3M8 12h3M8 16h3M14 8h2M14 12h2M14 16h2"/></svg>
+          <h3>Montagem e adequação de quadros de distribuição</h3>
+          <p>Quadro novo ou adequado às normas, com disjuntores e proteção no padrão certo.</p>
+        </article>
+        <article class="panel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.6-.6-2.6z"/></svg>
+          <h3>Manutenção corretiva e preventiva de instalações</h3>
+          <p>Conserto do que parou e revisão do que pode parar, antes de virar problema.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="emergency" id="emergencia">
+    <div class="wrap">
+      <div class="box">
+        <div>
+          <h2>Orçamento grátis<br>Emergências 24h</h2>
+          <p>Cheiro de queimado, disjuntor desarmando ou falta de energia? Chame agora pelo WhatsApp.</p>
+        </div>
+        <a class="btn btn-primary" href="https://wa.me/5521966887450?text=Preciso%20de%20atendimento%20de%20emerg%C3%AAncia%20el%C3%A9trica.">Chamar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="seguranca">
+    <div class="wrap trust">
+      <div class="panel">
+        <h2 class="section-title" style="margin-bottom:20px">Rápido e <span>seguro</span></h2>
+        <ul class="checks">
+          <li>Serviço executado seguindo a norma NR-10</li>
+          <li>Atendimento rápido em todo o Rio de Janeiro</li>
+          <li>Orçamento sem custo e sem compromisso</li>
+        </ul>
+      </div>
+      <div class="panel nr">
+        <div><strong>NR-10</strong><br><span>Segurança em instalações e serviços em eletricidade</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap contact">
+    <a href="https://wa.me/5521966887450">WhatsApp (21) 96688-7450</a>
+    <small>Rio de Janeiro · Atendimento rápido</small>
+  </div>
+</footer>
+
+<a class="float" href="https://wa.me/5521966887450" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 2.4a10.6 10.6 0 1 1-5.6 19.6l-.4-.2-3.8 1.2 1.2-3.7-.3-.4A10.6 10.6 0 0 1 16 5.4zm-4 5.2c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.2 2.6 4.1 6.4 5.6 3.2 1.200 3.800 1 4.500.9.700-.1 2.200-.9 2.500-1.800.3-.9.3-1.600.2-1.800-.1-.2-.3-.3-.7-.5l-2.300-1.100c-.3-.1-.6-.2-.8.200l-1 1.200c-.2.200-.4.300-.8.100-.4-.2-1.600-.6-3-1.900-1.100-1-1.900-2.200-2.100-2.600-.2-.4 0-.6.200-.8l.6-.7c.2-.2.200-.4.400-.6.100-.3.100-.5 0-.7l-1-2.400c-.3-.6-.5-.5-.8-.5z"/></svg>
+</a>
+</body>
+</html>
