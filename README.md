@@ -1,2 +1,0 @@
-# eletrica24h
-Projeto
